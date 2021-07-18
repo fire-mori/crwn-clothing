@@ -21,9 +21,7 @@
     "rules": {
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "react/prop-types": "off",
-        "react/jsx-props-no-spreading": [1, {
-            "extensions": [".js", ".jsx"]
-        }],
+        "react/jsx-props-no-spreading": "off",
         "jsx-a11y/interactive-supports-focus": [1, {
             "extensions": [".js", ".jsx"]
         }],
