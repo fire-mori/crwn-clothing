@@ -18,13 +18,17 @@
     "plugins": [
         "react"
     ],
+    "parser": "babel-eslint",
     "rules": {
+        "jsx-quotes": ["error", "prefer-double"],
+        "quotes": ["error", "single"],
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "react/prop-types": "off",
         "react/jsx-props-no-spreading": "off",
         "jsx-a11y/interactive-supports-focus": [1, {
             "extensions": [".js", ".jsx"]
         }],
+        "react/button-has-type": "off",
         "jsx-a11y/click-events-have-key-events": [1, {
             "extensions": [".js", ".jsx"]
         }]
