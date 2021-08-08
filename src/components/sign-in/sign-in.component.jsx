@@ -15,12 +15,12 @@ class SignIn extends React.Component {
     };
   }
 
-  handleSubmit(event) {
+  handleSubmit = (event) => {
     event.preventDefault();
     this.setState({ email: '', password: '' });
   }
 
-  handleChange(event) {
+  handleChange = (event) => {
     const { value, name } = event.target;
     this.setState({ [name]: value });
   }
@@ -49,6 +49,7 @@ class SignIn extends React.Component {
             name="password"
             value={password}
             required
+            onChange={this.handleChange}
           />
           <div className="buttons">
             <CustomButton type="submit">Sign in</CustomButton>
