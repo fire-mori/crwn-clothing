@@ -39,12 +39,12 @@ class SignUp extends React.Component {
     } catch (error) {
       console.error(error);
     }
-  }
+  };
 
   handleChange = (event) => {
     const { value, name } = event.target;
     this.setState({ [name]: value });
-  }
+  };
 
   render() {
     const {
@@ -55,10 +55,7 @@ class SignUp extends React.Component {
         <h2 className="title">I do not have an account</h2>
         <span>Sign up with your email and password</span>
 
-        <form
-          className="sign-up-form"
-          onSubmit={this.handleSubmit}
-        >
+        <form className="sign-up-form" onSubmit={this.handleSubmit}>
           <FromInput
             label="Display Name"
             id="displayName"

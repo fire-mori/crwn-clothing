@@ -24,12 +24,12 @@ class SignIn extends React.Component {
     } catch (error) {
       console.error(error);
     }
-  }
+  };
 
   handleChange = (event) => {
     const { value, name } = event.target;
     this.setState({ [name]: value });
-  }
+  };
 
   render() {
     const { email, password } = this.state;
